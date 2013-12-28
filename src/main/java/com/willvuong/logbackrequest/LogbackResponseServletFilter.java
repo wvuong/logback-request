@@ -131,7 +131,11 @@ public class LogbackResponseServletFilter implements Filter {
             if (usingWriter) {
                 return writer.toString();
             }
-            else return stream.toString();
+            else if (stream != null) {
+                return stream.toString();
+            }
+
+            return null;
         }
 
         @Override
