@@ -11,7 +11,7 @@ angular.module('com.willvuong.logback-request', [])
             name: '@'
         },
         replace: true,
-        template: '<div class="panel panel-default">' +
+        template: '<div id="logTableDirective" class="panel panel-default">' +
             '<div class="panel-heading">' +
             '<h3 class="panel-title" ng-click="toggle()">' +
             '<span class="glyphicon" ng-class="{\'glyphicon-collapse-down\': dialogIsHidden, \'glyphicon-collapse-up\': !dialogIsHidden}">&nbsp;</span>' +
