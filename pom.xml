@@ -16,6 +16,17 @@
         <jettyVersion>9.1.0.v20131115</jettyVersion>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>wvuong-github-mvn-repo</id>
+            <url>https://raw.github.com/wvuong/logback-request-ui/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
@@ -159,6 +170,14 @@
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-library</artifactId>
             <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- web ui -->
+        <dependency>
+            <groupId>com.willvuong</groupId>
+            <artifactId>logback-request-ui</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
