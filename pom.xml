@@ -44,6 +44,9 @@
                 <version>${jettyVersion}</version>
                 <configuration>
                     <webAppSourceDirectory>src/test/webapp</webAppSourceDirectory>
+                    <webApp>
+                        <contextPath>/</contextPath>
+                    </webApp>
                     <reload>manual</reload>
                     <useTestScope>true</useTestScope>
                     <stopKey>foo</stopKey>
@@ -62,9 +65,6 @@
                         <configuration>
                             <scanIntervalSeconds>0</scanIntervalSeconds>
                             <daemon>true</daemon>
-                            <webApp>
-                                <contextPath>/it</contextPath>
-                            </webApp>
                         </configuration>
                     </execution>
                     <execution>

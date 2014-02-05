@@ -28,6 +28,6 @@ public abstract class AbstractWebDriverTest {
     }
 
     protected String getBaseUrl() {
-        return System.getProperty("url", "http://localhost:8080/it");
+        return System.getProperty("url", "http://localhost:8080");
     }
 }
