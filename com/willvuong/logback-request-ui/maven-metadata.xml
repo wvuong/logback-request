@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.willvuong</groupId>
-  <artifactId>logback-request</artifactId>
+  <artifactId>logback-request-ui</artifactId>
   <versioning>
     <versions>
       <version>1.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20140205035253</lastUpdated>
+    <lastUpdated>20140206031916</lastUpdated>
   </versioning>
 </metadata>
